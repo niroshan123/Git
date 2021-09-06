@@ -81,7 +81,20 @@ git pull origin main
 
 To change to a specific branch from main branch( git checkout B/create-feature )
 
+Push to master - git push origin main
+
 _____________________________________________
+1) Undo Uncommited changes(last commit ekata passe krpu changes wenas kirima)  
+   git checkout -- filename (specific file)
+   git checkout -- . (undo all files)
+
+2) Undo Commited changes
+   git revert (log code) -> with this undo wela commit wenawa parana ekata
+
+3) Resettig changes
+   we can get git logs by git log
+   git reset
+
 
 
 
