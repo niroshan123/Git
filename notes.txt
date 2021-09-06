@@ -1,0 +1,85 @@
+/// Steps to all git commands
+
+Git --> version control system in local machine
+GitHub --> remote environment hoster the codes that are in local machines
+
+Respository -> The main location the where the project is stored
+Branches --> Copy of the original project
+Commit --> Save the changes made
+---push,pull,status,add,commit,branchh,checkout,stash,rebase,reset--
+
+Assueme there are 4 users
+
+Person A - Creates the project and make the repository
+Person B - Pull the Repository
+Person C - Pull the Repository
+Person D - Pull the Repository
+
+
+Creator - 
+1) git init (making it a git repository)
+2) git add --all (stage all changes - like confirming all are to be added)
+   git add personB.txt (stage specific file)
+3) git status (details of the changes and other details)
+4) git commit -m "my commit message" (save the feature)
+5) git log (shows the commit history and the users)
+6) create a repository in GitHub
+7) git remote add origin https://github.com/niroshan123/Git.git (Link the local repo with remote repository)
+8) git push -u origin main (put the content from local machine to the remote machine -u use at the very first time only)
+-----------------------------------------------------
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/niroshan123/Git.git
+git push -u origin main
+
+Other members to clone the project---------
+
+git clone https://github.com/niroshan123/Git
+
+Now you can check where the brach you are with git status
+
+To create your feature you have to create a seperated brach from master branch
+
+git checkout -b B/create-feature
+
+Now the all things in master brach will appear to to your new branch and make changes you want to develop your new feature 
+
+to check what are the changes you have done
+
+git status
+
+Add(stage) all the changes
+
+git add --all
+
+Commit the changes for your branch
+
+git commit -m "B/Feature commit name"
+
+Push to the branch
+
+git push origin B/create-feature
+
+Pull Request
+
+This is something that a scrum master does. Assume that we have made a feature hich is running weel on our local machine and you as the developer
+wants to put that in to master. But before that it should be varified by the senior developer. So that you can requet the scrum manster to
+make a pull request from your branch and merch if that works well. So the scrum master will go to github -> pull request tab and will choose main branch and your brach to make pull request
+So if there is no conflict then he can merge your branch with main branch so main branch will have yours new feature
+
+There by once other developers develop there own feature they also can request scrum manster to do a pull request of there feature branches and merge if that
+works well. And after those are merged to get the newly added feature developers can pull the main branch and update there project to the latests.
+
+For that(local mater brach walata latest versions pull karaganna)
+
+git checkout main
+
+git pull origin main
+
+
+To change to a specific branch from main branch( git checkout B/create-feature )
+
+
+
