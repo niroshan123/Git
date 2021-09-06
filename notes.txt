@@ -88,6 +88,9 @@ _____________________________________________
    git checkout -- filename (specific file)
    git checkout -- . (undo all files)
 
+   git restore --staged filename
+   git restore --staged .
+
 2) Undo Commited changes
    git revert (log code) -> with this undo wela commit wenawa parana ekata-directly commit change
    git revert -n log code  -> explicit commit
