@@ -89,11 +89,12 @@ _____________________________________________
    git checkout -- . (undo all files)
 
 2) Undo Commited changes
-   git revert (log code) -> with this undo wela commit wenawa parana ekata
+   git revert (log code) -> with this undo wela commit wenawa parana ekata-directly commit change
+   git revert -n log code  -> explicit commit
 
-3) Resettig changes
-   we can get git logs by git log
-   git reset
+3) Resettig changes(to get to a history state)
+   we can get git logs by -> git log
+   git reset --hard commitid
 
 
 
